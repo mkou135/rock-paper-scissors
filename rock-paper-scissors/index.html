@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <!-- rules postioned Absolutely,Js Triggered -->
+  <div class="rules ">
+
+    <h3 class="rules-tag">Rules </h3>
+    <img src="assets/images/icon-close.svg" alt="close" class="img-close">
+
+    <img src="assets/images/image-rules.svg" alt="rules" class="rules-img">
+
+  </div>
+
+  <!-- Main Section Begins here -->
+  <main>
+
+    <!-- Header begins here for logo,and Count -->
+    <section class="header ">
+      <div class="header--logo animate__animated animate__slideInUp">
+        <img src="assets/images/logo.svg" alt="logo" class="animate__animated animate__fadeIn">
+      </div>
+      <div class="header--score">
+        <p>Score</p>
+        <h2 class="count--score">0</h2>
+      </div>
+    </section>
+    <!-- Game Body Starts Here,Positioned Relatively -->
+    <section class="game--display">
+      <!-- Game Picker for Selection,Position absolute to Game Body -->
+      <div class="game--pick">
+        <div class="paper">
+          <img src="assets/images/icon-paper.svg" alt="paper" class="paper--img" id="paper">
+        </div>
+        <div class="scissors">
+          <img src="assets/images/icon-scissors.svg" alt="scissors" class="scissors--img" id="scissor">
+        </div>
+        <div class="rock">
+          <img src="assets/images/icon-rock.svg" alt="rock" class="rock--img" id="rock">
+        </div>
+      </div>
+      <!-- Game Decider,Position absolute to Game Body -->
+      <div class="game--decide hidden">
+
+        <div class="game--compare">
+          <div>
+            <p>You Picked</p>
+            <div class="win--effect-user">
+              <img alt="you choose" class=" " id="pickA" src="...">
+            </div>
+          </div>
+          <div>
+            <h3 class="announce"> you win</h3>
+            <p class="button" id="play--again"> play again</p>
+          </div>
+          <div>
+
+            <p>The House Picked</p>
+            <div id="win--effect-house">
+              <img src="assets/images/house.png" alt="house chooses" class="house--blank" id="pickB">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="rule--button ">
+      <p class="">Rules </p>
+    </aside>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Michael Kourkov</a>.
+  </div>
+  <script src="assets/script/index.js"></script>
+</body>
+
+</html>
